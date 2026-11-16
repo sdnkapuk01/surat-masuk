@@ -22,6 +22,15 @@
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbxIxloM-YYh1fhbTAtWXrPkdE_513HhkRaEq5cypC7L2-H-pXmbifAIXA_7Hu9edBQU4A/exec" title="Agenda Surat Masuk & SK - SDN Kapuk 01" allow="fullscreen"></iframe>
+    <iframe id="appFrame" src="https://script.google.com/macros/s/AKfycbxIxloM-YYh1fhbTAtWXrPkdE_513HhkRaEq5cypC7L2-H-pXmbifAIXA_7Hu9edBQU4A/exec" title="Agenda Surat Masuk & SK - SDN Kapuk 01" allow="fullscreen"></iframe>
+
+    <script>
+        // Mencegah address bar browser luar ikut berubah jika memungkinkan, 
+        // serta menjaga fokus navigasi tetap di dalam bingkai GitHub Pages
+        history.pushState(null, '', location.href);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, '', location.href);
+        });
+    </script>
 </body>
 </html>
